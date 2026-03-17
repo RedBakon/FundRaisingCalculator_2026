@@ -8,7 +8,7 @@ def make_statement(statement, decoration):
     """Emphasises headings by adding decoration
     at the start and end"""
 
-    print(f"{decoration * 3} {statement} {decoration * 3}")
+    return f"{decoration * 3} {statement} {decoration * 3}"
 
 
 def yes_no_check(question):
@@ -27,30 +27,14 @@ def yes_no_check(question):
 
 
 def instructions():
-    make_statement("Instructions", "ℹ️")
+    print(make_statement("Instructions", "ℹ️"))
 
     print('''
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-    16
-    17
-    18
-    19
-    20
-    21
+    Pick yo Product than tell me the quantity of those products your making.
+    Then give me the variable expenses.
+    Once your done I'll instantly calculate it. 
+    You'll also need give me fixed expenses and if you don't have any I'll show you
+    the results of my calculations.
     ''')
 
 
@@ -178,7 +162,7 @@ def get_expenses(exp_type, how_many=1):
                                   tablefmt='psql', showindex=False)
         
     # return the expenses panda and subtotal
-    return expense_frame, subtotal
+    return expense_string, subtotal
 
 
 def currency(x):
