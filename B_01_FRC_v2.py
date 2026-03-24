@@ -339,7 +339,7 @@ to_write = [main_heading_string, quantity_string,
             "\n", variable_heading_string, variable_panda_string,
             variable_subtotal_string,
             "\n", fixed_heading_string, fixed_panda_string,
-            fixed_subtotal_string, total_expenses_string
+            fixed_subtotal_string, total_expenses_string,
             profit_goal_string, sales_target_string,
             minimum_price_string, "\n", suggested_price_string]
 
